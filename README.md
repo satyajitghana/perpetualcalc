@@ -1,2 +1,2 @@
-# perpetualcalc
+# perpetualcalcender
 Perpetual Calendar in C++
