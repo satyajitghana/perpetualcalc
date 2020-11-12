@@ -1,6 +1,6 @@
-#include<iostream.h>
+#include<iostream>
 #include<conio.h>
-
+using namespace std;
 //Functions Prototype
 int first_day (int);
 void month_name(int);
@@ -10,7 +10,7 @@ int leap(int);
 void main()
 {
 restart:
-clrscr();
+system("CLS");
 
 unsigned int year,month;
 int x;
@@ -60,7 +60,7 @@ cout<<"\t"<<year<<"\n\n\tMon\tTue\tWed\tThu\tFri\tSat\tSun\n";
 int j=perpetual_calender[x-1][month-1], days=no_days(month,year);
 	for (int i=0; i<j; i++)
 		cout<<"\t";
-	for(i=1; i<=days; i++)
+	for(int i=1; i<=days; i++)
 		{
 			cout<<i<<"\t";
 				if(j==7)
